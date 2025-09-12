@@ -112,7 +112,7 @@ body {
 .vertical-inner {
     width: 8px;
     height: 230px;
-    transform: translateX(0%) translateY(-97%);
+    transform: translateY(-97%);
 }
 
 .target-v2 {
