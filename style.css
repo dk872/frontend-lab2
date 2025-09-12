@@ -1,0 +1,180 @@
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.row1 {
+    background-color: #048f8f;
+}
+
+.row1 td {
+    color: #ee7007;
+}
+
+.row2 {
+    background-color: #f5f504;
+}
+
+.row2 td {
+    color: #6d0ba4;
+}
+
+.row1:hover {
+    background-color: #ee7007;
+}
+
+.row1:hover td {
+    color: #048f8f;
+}
+
+.row2:hover {
+    background-color: #6d0ba4;
+}
+
+.row2:hover td {
+    color: #f5f504;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    align-items: flex-start;
+    gap: 80px;
+    min-height: 100vh;
+}
+
+.targets {
+    display: flex;
+    gap: 120px;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 20px;
+    }
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+.target-v1 {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    position: static;
+    transform: none;
+}
+
+.target-v1 .circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-circle {
+    width: 200px;
+    height: 200px;
+    background: black;
+}
+
+.inner-white {
+    width: 133px;
+    height: 133px;
+    background: white;
+}
+
+.center-black {
+    width: 67px;
+    height: 67px;
+    background: black;
+}
+
+.target-v1 .line {
+    background: black;
+}
+
+.horizontal-inner {
+    width: 230px;
+    height: 8px;
+    transform: translateY(-1285%);
+}
+
+.vertical-inner {
+    width: 8px;
+    height: 230px;
+    transform: translateX(0%) translateY(-97%);
+}
+
+.target-v2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+        }
+
+.outer-ring {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.middle-ring {
+    width: 133px;
+    height: 133px;
+    top: 33px;
+    left: 33px;
+    background: white;
+}
+
+.inner-ring {
+    width: 67px;
+    height: 67px;
+    top: 67px;
+    left: 67px;
+    background: black;
+}
+
+.center-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    top: 90px;
+    left: 90px;
+}
+
+.crosshair {
+    position: absolute;
+    background: black;
+}
+
+.crosshair.horizontal {
+    width: 230px;
+    height: 8px;
+    top: 97px;
+    left: -15px;
+}
+
+.crosshair.vertical {
+    width: 8px;
+    height: 230px;
+    top: -15px;
+    left: 97px;
+}
